@@ -97,10 +97,16 @@ namespace BigTimer
 			process.Start();
 		}
 
-		private void u_aboutToolStripMenuItem_Click(object sender, EventArgs e)
+		private void ShowAbout(object sender, EventArgs e)
 		{
 			AboutForm aboutForm = new AboutForm();
 			aboutForm.ShowDialog();
+		}
+
+		private void CopyCurrentTime(object sender, EventArgs e)
+		{
+			string timeString = u_show.Text;
+			Clipboard.SetText(timeString);
 		}
     }
 }

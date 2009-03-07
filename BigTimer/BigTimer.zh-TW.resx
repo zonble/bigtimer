@@ -126,6 +126,46 @@
   <data name="u_zero.Text" xml:space="preserve">
     <value>歸零</value>
   </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="u_fileToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>60, 20</value>
+  </data>
+  <data name="u_fileToolStripMenuItem.Text" xml:space="preserve">
+    <value>檔案 (&amp;F)</value>
+  </data>
+  <data name="u_editToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>60, 20</value>
+  </data>
+  <data name="u_editToolStripMenuItem.Text" xml:space="preserve">
+    <value>編輯 (&amp;E)</value>
+  </data>
+  <data name="u_homepageToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>152, 22</value>
+  </data>
+  <data name="u_homepageToolStripMenuItem.Text" xml:space="preserve">
+    <value>開啟首頁 (&amp;H)</value>
+  </data>
+  <data name="u_aboutToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>152, 22</value>
+  </data>
+  <data name="u_aboutToolStripMenuItem.Text" xml:space="preserve">
+    <value>關於 (&amp;A)</value>
+  </data>
+  <data name="u_helpToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>61, 20</value>
+  </data>
+  <data name="u_helpToolStripMenuItem.Text" xml:space="preserve">
+    <value>說明 (&amp;H)</value>
+  </data>
+  <data name="u_exitToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>158, 22</value>
+  </data>
+  <data name="u_exitToolStripMenuItem.Text" xml:space="preserve">
+    <value>離開  (&amp;X)</value>
+  </data>
+  <data name="u_copyCurrentTimeToolStripMenuItem.Text" xml:space="preserve">
+    <value>複製目前時間 (&amp;C)</value>
+  </data>
   <data name="$this.Text" xml:space="preserve">
     <value>大計時器</value>
   </data>

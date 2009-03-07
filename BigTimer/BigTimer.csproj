@@ -54,6 +54,10 @@
       <SubType>Designer</SubType>
       <DependentUpon>AboutForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="AboutForm.zh-TW.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>AboutForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="BigTimer.resx">
       <SubType>Designer</SubType>
       <DependentUpon>BigTimer.cs</DependentUpon>
