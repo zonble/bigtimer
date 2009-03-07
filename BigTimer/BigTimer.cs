@@ -96,5 +96,11 @@ namespace BigTimer
 			process.StartInfo.FileName = "http://github.com/zonble/bigtimer/tree/master";
 			process.Start();
 		}
+
+		private void u_aboutToolStripMenuItem_Click(object sender, EventArgs e)
+		{
+			AboutForm aboutForm = new AboutForm();
+			aboutForm.ShowDialog();
+		}
     }
 }

@@ -123,6 +123,7 @@
 			// 
 			this.u_aboutToolStripMenuItem.Name = "u_aboutToolStripMenuItem";
 			resources.ApplyResources(this.u_aboutToolStripMenuItem, "u_aboutToolStripMenuItem");
+			this.u_aboutToolStripMenuItem.Click += new System.EventHandler(this.u_aboutToolStripMenuItem_Click);
 			// 
 			// BigTimer
 			// 
