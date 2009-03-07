@@ -5,6 +5,7 @@ using System.Data;
 using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
+using System.Diagnostics;
 
 namespace BigTimer
 {
@@ -83,5 +84,17 @@ namespace BigTimer
 			m_totalDuration = TimeSpan.Zero;
             u_zero.Enabled = false;
         }
+
+		private void ExitApplication(object sender, EventArgs e)
+		{
+			Application.Exit();
+		}
+
+		private void OpenHomepage(object sender, EventArgs e)
+		{
+			Process process = new Process();
+			process.StartInfo.FileName = "http://github.com/zonble/bigtimer/tree/master";
+			process.Start();
+		}
     }
 }
