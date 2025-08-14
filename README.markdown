@@ -72,7 +72,9 @@ This is a legacy project from 2008, maintained for historical purposes and simpl
 
 ## License
 
-Copyright © 2008. Please refer to the source code for license information.
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+Copyright © 2008 zonble
 
 ## Contributing
 
