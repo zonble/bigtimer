@@ -3,3 +3,8 @@ obj
 Debug
 Release
 *.suo
+*.user
+*.cache
+*.temp
+.vs/
+packages/
