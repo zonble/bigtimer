@@ -1,0 +1,45 @@
+name: Build BigTimer
+
+on:
+  push:
+    branches: [ master, main ]
+  pull_request:
+    branches: [ master, main ]
+
+jobs:
+  build:
+    runs-on: windows-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+
+    - name: Setup MSBuild
+      uses: microsoft/setup-msbuild@v2
+
+    - name: Setup NuGet
+      uses: nuget/setup-nuget@v2
+
+    - name: Restore NuGet packages
+      run: nuget restore BigTimer.sln
+
+    - name: Build solution
+      run: msbuild BigTimer.sln /p:Configuration=Release /p:Platform="Any CPU"
+
+    - name: Archive build artifacts
+      uses: actions/upload-artifact@v4
+      with:
+        name: BigTimer-Release
+        path: |
+          BigTimer/bin/Release/
+          !BigTimer/bin/Release/*.pdb
+        retention-days: 30
+
+    - name: Archive debug artifacts (for troubleshooting)
+      uses: actions/upload-artifact@v4
+      with:
+        name: BigTimer-Debug-Symbols
+        path: |
+          BigTimer/bin/Release/*.pdb
+        retention-days: 7
+        if-no-files-found: ignore
