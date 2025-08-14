@@ -1,5 +1,7 @@
 # BigTimer
 
+[![Build BigTimer](https://github.com/zonble/bigtimer/actions/workflows/build.yml/badge.svg)](https://github.com/zonble/bigtimer/actions/workflows/build.yml)
+
 A simple, lightweight stopwatch application for Windows built with C# and Windows Forms.
 
 ## Overview
